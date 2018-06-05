@@ -1,0 +1,10 @@
+name = 'clickos'
+kernel = '/users/suhasj0/ClickOsSetupForCloudLab/clickos/minios/build/clickos_x86_64'
+vcpus = '1'
+memory = '8'
+
+vif = ['script=vif-openvswitch,mac=00:00:00:00:01:00,bridge=xenbr0']
+on_poweroff = 'destroy'
+on_reboot = 'restart'
+on_crash = 'preserve'
+click = 'tcpsyn.click'
